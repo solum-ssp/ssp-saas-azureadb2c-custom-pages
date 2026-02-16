@@ -1,1 +1,1 @@
-# microsoft-login-page
+# ssp-saas-azureadb2c-custom-pages
