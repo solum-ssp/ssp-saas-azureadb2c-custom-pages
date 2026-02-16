@@ -998,6 +998,59 @@
         background-position: center;
         background-repeat: no-repeat;
       }
+     /* ==========================================
+     PRIMARY BUTTONS (EXCEPT CANCEL)
+      ========================================== */
+      
+      /* Target all buttons inside #api except Cancel */
+      #api button:not(#cancel):not(.cancel):not([name="cancel"]),
+      #api input[type="submit"],
+      #continue,
+      #api .sendCode,
+      #api .verifyCode,
+      #api .sendNewCode,
+      #api .changeClaims {
+      
+          background-color: #2b2565 !important;
+          border-color: #2b2565 !important;
+          color: #ffffff !important;
+      }
+      
+      /* Hover */
+      #api button:not(#cancel):hover,
+      #api input[type="submit"]:hover {
+          background-color: #2b2565 !important;
+          border-color: #2b2565 !important;
+          opacity: 0.9;
+      }
+      
+      /* Disabled */
+      #api button:not(#cancel"):disabled,
+      #api input[type="submit"]:disabled {
+          background-color: #2b2565 !important;
+          border-color: #2b2565 !important;
+          opacity: 0.5 !important;
+      }
+      /* ==========================================
+         CANCEL BUTTON STYLE
+      ========================================== */
+      
+      #api #cancel,
+      #api button[name="cancel"],
+      #api .buttons button:first-child {
+      
+          background-color: transparent !important;
+          border: none !important;
+          color: #555 !important;   /* change text color */
+          box-shadow: none !important;
+      }
+      
+      /* Hover for Cancel */
+      #api #cancel:hover,
+      #api .buttons button:first-child:hover {
+          text-decoration: underline;
+          color: #2b2565 !important;
+      }
   </style>
   </head>
   <body>
